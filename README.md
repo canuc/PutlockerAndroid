@@ -41,4 +41,7 @@ ECLIPSE
 
 Click File > Import. Then in the Dialog, click the Android drop down, then click Existing Android Code Into Workspace.
 
+LICENSE
+=======
 
+Please read LICENSE.txt
