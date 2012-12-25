@@ -12,7 +12,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -36,15 +35,13 @@ import com.putlocker.upload.storage.PutlockerUploadJob;
 import com.putlocker.upload.storage.TypedStorageInterface;
 import com.putlocker.upload.util.FileFactory;
 import com.putlocker.upload.util.MimeTypeMap;
-import com.tapfortap.AdView;
-import com.tapfortap.AdView.AdViewListener;
 
 public class PutlockerTransferList extends ActivityBase implements PutlockerTransferResponder, OnItemClickListener {
 	private ListView _list;
 	private DownloadArrayAdapter _adapter;
 	private static int DOWNLOAD_STOP_DOWNLOAD = 0;
 	private static int DOWNLOAD_DELETE_DOWNLOAD = 1;
-	private AdView _adView;
+
 	public static final String SCROLL_TO_TRANSFER = "PutlockerTransferList.SCROLL_TO_TRANSFER";
 	
 	private PutlockerUpDownloadJob _menuItemSelected;

@@ -53,7 +53,6 @@ import com.putlocker.upload.storage.Persistable;
 import com.putlocker.upload.storage.PutlockerUploadJob;
 import com.putlocker.upload.storage.TypedStorageInterface;
 import com.putlocker.upload.util.PutlockerSha1;
-import com.tapfortap.TapForTap;
 
 /*
  * This activity is going to query the application and try to retrieve 
@@ -78,20 +77,7 @@ public class PutlockerLaunchpad extends ActivityBase implements RequestCallback 
 		PutlockerApplication app = (PutlockerApplication) getApplication();
 		AuthStorage p = (AuthStorage) app.getStorage().getTyped(authStorage);
 		KikData messageData = KikClient.getDataFromIntent(getIntent());
-		TapForTap.initialize(this, "2224198dff42f00507fc991866fcfc60");
 		
-		if (p != null ) {
-			try {
-				TapForTap.setUserAccountId(PutlockerSha1.SHA1(p.getValueForKey(AuthStorage.AUTH_USERNAME)));
-			} catch (NoSuchAlgorithmException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (UnsupportedEncodingException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (Exception e) {
-			}
-		}
 		if (messageData.getType() == KikData.TYPE_NOT_KIK) {
 
 			if (currIntent.getAction().equals(Intent.ACTION_VIEW)

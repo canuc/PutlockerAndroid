@@ -40,9 +40,4 @@
     android:gravity="center_horizontal"
 	>
 </LinearLayout>
-<!-- <com.tapfortap.AdView android:id="@+id/ad_view"
-  android:layout_height="50dip"
-  android:layout_width="320dip"
-  android:layout_gravity="bottom|center_horizontal"
-  /> -->
 </LinearLayout>

@@ -18,11 +18,7 @@
         android:label="@string/app_name" 
         android:name=".PutlockerApplication"
         android:theme="@style/app_theme">
-        <meta-data android:name="com.mobclix.APPLICATION_ID"
-        android:value="e69425f3-bcb0-4e80-a133-85b9ee790b86"/>
-    <activity 
-        android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
-        android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
         <activity
             android:name=".PutlockerLaunchpad"
             android:label="@string/app_name" 
@@ -109,7 +105,6 @@
              android:launchMode="singleTop"
              android:configChanges="keyboardHidden|orientation"
              ></activity>
-         <activity android:name="com.tapfortap.TapForTapActivity"/>
          <!--  Services -->
          <service android:name=".DownloadService"
              android:enabled="true"

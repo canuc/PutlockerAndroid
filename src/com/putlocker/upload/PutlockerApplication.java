@@ -32,7 +32,6 @@ import com.putlocker.upload.manager.DownloadsManager;
 import com.putlocker.upload.storage.Persistable;
 import com.putlocker.upload.storage.PersistantStorage;
 import com.putlocker.upload.storage.TypedStorageInterface;
-import com.tapfortap.TapForTap;
 
 public class PutlockerApplication extends Application {
 	

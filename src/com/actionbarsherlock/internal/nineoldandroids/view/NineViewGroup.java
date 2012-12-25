@@ -1,11 +1,14 @@
 package com.actionbarsherlock.internal.nineoldandroids.view;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.ViewGroup;
 
 import com.actionbarsherlock.internal.nineoldandroids.view.animation.AnimatorProxy;
 
+@SuppressLint("NewApi")
 public abstract class NineViewGroup extends ViewGroup {
     private final AnimatorProxy mProxy;
 
@@ -34,41 +37,47 @@ public abstract class NineViewGroup extends ViewGroup {
         super.setVisibility(visibility);
     }
 
-    public float getAlpha() {
+    @SuppressLint("NewApi")
+	public float getAlpha() {
         if (AnimatorProxy.NEEDS_PROXY) {
             return mProxy.getAlpha();
         } else {
             return super.getAlpha();
         }
     }
-    public void setAlpha(float alpha) {
+    @SuppressLint("NewApi")
+	public void setAlpha(float alpha) {
         if (AnimatorProxy.NEEDS_PROXY) {
             mProxy.setAlpha(alpha);
         } else {
             super.setAlpha(alpha);
         }
     }
-    public float getTranslationX() {
+    @SuppressLint("NewApi")
+	public float getTranslationX() {
         if (AnimatorProxy.NEEDS_PROXY) {
             return mProxy.getTranslationX();
         } else {
             return super.getTranslationX();
         }
     }
-    public void setTranslationX(float translationX) {
+    @TargetApi(11)
+	public void setTranslationX(float translationX) {
         if (AnimatorProxy.NEEDS_PROXY) {
             mProxy.setTranslationX(translationX);
         } else {
             super.setTranslationX(translationX);
         }
     }
-    public float getTranslationY() {
+    @SuppressLint("NewApi")
+	public float getTranslationY() {
         if (AnimatorProxy.NEEDS_PROXY) {
             return mProxy.getTranslationY();
         } else {
             return super.getTranslationY();
         }
     }
+    @SuppressLint("NewApi")
     public void setTranslationY(float translationY) {
         if (AnimatorProxy.NEEDS_PROXY) {
             mProxy.setTranslationY(translationY);
