@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/content_view"
+    android:background="@drawable/activity_background" >
+    
+	<ScrollView android:fillViewport="true"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent">
+	<LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent">
+	    
+	    <EditText
+		      android:id="@+id/putlocker_username"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textNoSuggestions|textVisiblePassword"
+		      style="@style/textfield"
+		      android:hint="@string/hint_username"
+		      />
+	     <EditText
+		      android:id="@+id/putlocker_password"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textPassword"
+		      style="@style/textfield"
+		      android:hint="@string/hint_password"
+		      />
+	     <RelativeLayout 
+	    			android:layout_width="fill_parent"
+	    			android:layout_height="40dip">
+	    
+	    <ProgressBar android:indeterminate="true"
+	       			 android:id="@+id/progress_spinner"
+	        	     android:layout_centerHorizontal="true"
+	        		 android:maxHeight="40dip"
+	        		 android:minHeight="20dip"
+	        		 android:minWidth="20dip"
+	        		 android:maxWidth="40dip"
+	        		 android:layout_width="wrap_content"
+	        		 android:layout_height="wrap_content"
+	        		 />
+	    <FrameLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/capcha_frame"
+	        android:layout_centerHorizontal="true"
+	       	android:visibility="gone"
+	       	android:background="@drawable/captcha_mask"
+	        >
+	    <ImageView 
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:id="@+id/captcha"
+	          />
+	    </FrameLayout>
+		</RelativeLayout>
+	 
+		<EditText
+		      android:id="@+id/putlocker_captcha"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textNoSuggestions|textVisiblePassword"
+		      style="@style/textfield"
+		      android:hint="@string/hint_captcha"
+		      />
+		<LinearLayout android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    >
+		<Button android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:height="40dip"
+		    	android:maxWidth="100dip"
+		    	android:minWidth="50dip"
+		    	 android:layout_marginLeft="10dip"
+		      	android:layout_marginRight="10dip"
+		      	android:layout_marginTop="10dip"
+		    	android:id="@+id/login"
+		    	android:text="@string/button_login"/>
+		<Button android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:height="40dip"
+		    	android:maxWidth="300dip"
+		    	android:minWidth="100dip"
+		    	android:layout_marginLeft="10dip"
+		      	android:layout_marginRight="10dip"
+		      	android:layout_marginTop="10dip"
+		    	android:id="@+id/register"
+		    	android:text="@string/button_register"/>
+		</LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+		
+</LinearLayout>

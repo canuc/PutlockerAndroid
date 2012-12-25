@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:background="@xml/list_selectable_drawable" 
+    >
+	<ImageView 
+    		android:layout_width="64dip"
+        	   android:layout_height="64dip"
+        	   android:id="@+id/icon_image_view"
+        	   android:layout_margin="3dip"
+        	   android:layout_gravity="center_vertical"
+        	   android:scaleType="center"
+        	   />
+    
+		<RelativeLayout 
+		    android:layout_width="0dip"
+		    android:layout_height="fill_parent"
+		    android:layout_weight="1"
+		    android:orientation="vertical"
+		    android:gravity="center_vertical">
+	    <TextView android:id="@+id/item_name"
+	        	  android:layout_width="wrap_content"
+	        	  android:layout_height="wrap_content"
+	        	  android:singleLine="true"
+	        	  android:layout_alignParentLeft="true"
+	        	  android:layout_gravity="center_vertical"
+	        	  style="@style/ShadowBoldText"
+	        	  />
+	      <TextView android:id="@+id/item_size"
+	        	  android:layout_width="wrap_content"
+	        	  android:layout_height="wrap_content"
+	        	  android:layout_below="@id/item_name"
+	        	  android:layout_alignParentLeft="true"
+	        	  android:singleLine="true"
+	        	  android:layout_marginTop="3dip"
+	        	  android:layout_gravity="center_vertical"
+	        	  style="@style/filesize_subtext"
+	        	  />
+	      <TextView android:id="@+id/item_update_time"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_below="@id/item_name"
+	          android:layout_marginTop="3dip"
+	          android:layout_toRightOf="@id/item_size"
+	          style="@style/filesize_subtext"
+	      	/>
+		</RelativeLayout>
+	 <!--  <ImageView 
+	    android:id="@+id/share_button_remote"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/share_icon"
+	    android:layout_margin="5dip"/> -->
+</LinearLayout>

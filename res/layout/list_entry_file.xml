@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:orientation="horizontal" 
+    android:background="@xml/list_selectable_drawable"
+    android:gravity="center_horizontal">
+    
+    <ImageView android:layout_width="60dip"
+        	   android:layout_height="60dip"
+        	   android:id="@+id/icon_image_view"
+        	   android:layout_margin="5dip"
+        	   android:layout_gravity="center"
+        	   android:scaleType="center"
+        	    android:duplicateParentState="true"/>
+    
+	<LinearLayout android:layout_width="1dip"
+	    		android:layout_height="fill_parent"
+	    		android:layout_weight="1"
+	    		android:orientation="vertical"
+	    		android:layout_margin="5dip"
+	    		 android:duplicateParentState="true"
+	    		>
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:layout_weight="1"
+	         android:duplicateParentState="true"
+	         android:layout_marginTop="10dip">
+	    <TextView android:id="@+id/item_name"
+	        	  android:layout_width="0px"
+	        	  android:layout_height="wrap_content"
+	        	  android:layout_weight="1"
+	        	  android:singleLine="true"
+	        	  style="@style/ShadowBoldText"
+	        	  android:duplicateParentState="true"
+	        	  />
+	    <TextView android:id="@+id/item_status"
+	        	  android:layout_width="wrap_content"
+	        	  android:layout_height="wrap_content"
+	        	  style="@style/ShadowBoldText"
+	        	  android:layout_gravity="right"
+	        	  android:duplicateParentState="true"/>
+	    </LinearLayout>
+	    <LinearLayout android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dip"
+	        android:layout_weight="1"
+	         android:duplicateParentState="true">
+	        
+	     <ProgressBar 
+	         	android:id="@+id/updown_progress"
+	         	android:layout_width="fill_parent"
+	         	android:layout_height="10dip"
+	         	android:duplicateParentState="true" 
+	         	android:layout_marginBottom="10dip"
+	         	android:layout_marginRight="10dip"
+	         	style="@style/Widget.Sherlock.Light.ProgressBar.Horizontal"
+	         	/>
+	     </LinearLayout>
+	</LinearLayout>    
+	<!-- <ImageView 
+	    android:id="@+id/share_button"
+	    android:layout_gravity="center"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:src="@drawable/share_icon"
+	    android:layout_margin="5dip"
+	    android:focusable="false"
+		android:focusableInTouchMode="false"
+		/> -->
+
+</LinearLayout>

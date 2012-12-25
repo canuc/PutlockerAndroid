@@ -1,0 +1,80 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-keep class android.support.v4.app.** { *; } 
+-keep interface android.support.v4.app.** { *; } 
+-keep class com.actionbarsherlock.** { *; } 
+-keep interface com.actionbarsherlock.** { *; } 
+-keepattributes *Annotation* 
+
+-keep class org.slf4j.** { *; } 
+-dontwarn org.ietf.jgss.**
+-keep class org.apache.log4j.** { *; } 
+-keep class org.apache.commons.logging.** { *; } 
+-keep class org.apache.commons.codec.binary.** { *; } 
+-keep public class com.mobclix.android.sdk.* { *; } 
+-keep class com.mobclix.android.sdk.MobclixContactsSdk3_4
+-keep class com.mobclix.android.sdk.MobclixContactsSdk5
+-keep class com.mobclix.android.sdk.MobclixWebViewClientSdk11
+-keepclassmembers class com.mobclix.android.sdk.MobclixWebViewClientSdk11
+{
+<init>(...);
+public void *(...);
+}
+-keep class com.mobclix.android.sdk.MobclixWebChromeClientSdk5
+-keepclassmembers class com.mobclix.android.sdk.MobclixWebChromeClientSdk5
+{
+<init>(...);
+public void *(...);
+}
+-keep class com.mobclix.android.sdk.MobclixWebChromeClientSdk7
+-keepclassmembers class com.mobclix.android.sdk.MobclixWebChromeClientSdk7
+{
+<init>(...);
+public void *(...);
+}
+-keep class com.mobclix.android.sdk.MobclixJavascriptInterface
+-keepclassmembers class com.mobclix.android.sdk.MobclixJavascriptInterface
+{
+public void *(...);
+<methods>;
+}
+-keepclassmembernames class
+com.mobclix.android.sdk.MobclixJavascriptInterface {
+public void *(...);
+<methods>;
+}
+-keep public class com.google.ads.*
+-keepclassmembers class com.google.ads.AdView {
+<init>(...);
+public void *(...);
+}
+-keepclassmembers class com.google.ads.AdSize {
+public static <fields>;
+}
+-keepclassmembers class com.google.ads.AdRequest {
+<init>(...);
+public void *(...);
+}
+-keepclassmembers class com.google.ads.AdListener {
+<init>(...);
+public void *(...);
+}
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/content_view"
+    android:background="@drawable/activity_background" >
+	<ScrollView android:fillViewport="true"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="fill_parent">
+	<LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent">
+	    
+	    <EditText
+		      android:id="@+id/putlocker_register_username"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textNoSuggestions|textVisiblePassword"
+		      style="@style/textfield"
+		      android:hint="@string/hint_username"
+		      />
+	    <EditText
+		      android:id="@+id/putlocker_register_email"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textEmailAddress"
+		      style="@style/textfield"
+		      android:hint="@string/hint_email"
+		      />
+	    <EditText
+		      android:id="@+id/putlocker_register_password"
+		      android:layout_width="fill_parent"
+		      android:layout_height="wrap_content"
+		      android:layout_marginLeft="10dip"
+		      android:layout_marginRight="10dip"
+		      android:layout_marginTop="10dip"
+		      android:inputType="textPassword"
+		      style="@style/textfield"
+		      android:hint="@string/hint_password"
+		      />
+	    
+		<Button android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:height="40dip"
+		    	android:maxWidth="100dip"
+		    	android:minWidth="50dip"
+		    	 android:layout_marginLeft="10dip"
+		      	android:layout_marginRight="10dip"
+		      	android:layout_marginTop="10dip"
+		    	android:id="@+id/register_account_button"
+		    	android:text="@string/register_button"/>
+</LinearLayout>
+</ScrollView>
+
+		
+</LinearLayout>

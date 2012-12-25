@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="login">Username</string>
+    <string name="app_name">Putlocker</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_captcha">Please enter the captcha above</string>
+    <string name="button_login">Login</string>
+    <string name="remote_service_started">Download Started!</string>
+    <string name="service_upload_started">Upload Started!</string>
+    
+    <string name="download_completed_error">Download Failed</string>
+    <string name="download_completed_success">Download Success</string>
+    
+    <string name="upload_completed_error">Upload Failed</string>
+    <string name="upload_completed_success">Upload Success</string>
+    
+    <string name="click_to_see_transfers">Click to see transfers</string>
+    
+    <string name="click_to_open">Click to open</string>
+    <string name="click_to_see_files">Click to see your files</string>
+    
+    <string name="remote_service_label">Remote Service Label</string>
+    <string name="download_started">Download of &quot;%s&quot; started!</string>
+    <string name="upload_started">Upload of &quot;%s&quot; started!</string>
+    <string name="download_failed">Download Failed</string>
+	<string name="register_button">Register</string>
+	<string name="hint_password2">Re-Enter Password</string>
+	<string name="hint_email">Email</string>
+	<string name="button_register">Register</string>
+	<string name="send_putlocker_message">Click here to download the file!</string>
+	
+	<string name="begining_download">Beginning Download...</string>
+	<string name="begining_upload">Beginning Upload...</string>
+	
+	<string name="error_title">Error</string>
+	<string name="error_downloading">Sorry please verify that you have network connectivity</string>
+	
+	<string name="okay">kk</string>
+	<string name="external_storage_unavailable">Your external storage is currently unavailable. The download will now stop</string>
+	<string name="context_menu_stop">Stop Download</string>
+	<string name="context_menu_delete">Delete Download</string>
+	<string name="transfers_uploads">Uploads</string>
+	<string name="transfers_downloads">Downloads</string>
+	<string name="delete_file">Delete local file</string>
+	<string name="would_you_like_to_delete_file">Would you like to delete the associated local file aswell?</string>
+	<string name="yes">Ye</string>
+	<string name="no">Naw</string>
+	<string name="please_wait_delete_file_remote">Delete File</string>
+	<string name="wait">Waiting...</string>
+	<string name="delete_file_remote">Delete Remote File</string>
+	<string name="success">Success</string>
+	<string name="file_successfully_deleted">File deleted sucessfully</string>
+	<string name="sorry_error_deleting_file">Sorry there was an error deleting the file, please ensure you are connected</string>
+	<string name="title_external_storage_mounted">External Storage Unreable</string>
+	<string name="body_external_storage_mounted">:S it looks like your external storage is not readable. It could be in use. Orr... maby you need to put in an sd card</string>
+	<string name="licenses">
+	    Apache Http Core\n\n\thttp://www.apache.org/licenses/LICENSE-2.0\n
+	    Apache Http Mime\n\n\thttp://www.apache.org/licenses/LICENSE-2.0\n
+	   	Action Bar Sherlock\n\n\thttps://raw.github.com/JakeWharton/ActionBarSherlock/master/LICENSE.txt\n
+	</string>
+	<string-array name="share_options"><item>Share Via Kik</item><item>Copy</item><item >Other</item></string-array>
+	<string name="dialog_mx_player">Having trouble playing this video? Try MXPlayer, would you like to download it now?</string>
+	<string name="dont_warn">Don\'t ask again</string>
+	<string name="take_to_mx_player">Download Now</string>
+	<string name="no_thanks">No Thanks</string>
+	<string name="menu_search">Search</string>
+	<string name="hint_search">Search</string>
+	<string name="upload_from_where">Upload From:</string>
+	<string name="media_select">Media Type:</string>
+	<string-array name="upload_locations"><item>From Gallery</item><item >File select</item></string-array>
+	<string-array name="type_select"><item>Image</item><item >Video</item></string-array>
+	<string-array name="sort_order_arr"><item>Sort by name</item><item >Sort by file type</item></string-array>
+	<string name="no_files">You haven\'t uploaded any files\nClick the upload button to upload a file</string>
+	<string name="folder_no_files">You haven\'t uploaded any files\nto this folder</string>
+	<string name="enter_link">Enter the link:</string>
+	<string name="empty_username">Please enter your username</string>
+	<string name="empty_password">Please enter your password</string>
+	<string name="empty_capcha">the capcha cannot be empty</string>
+	<string name="message_putlocker">Putlocker: </string>
+	<string name="invalid_link">Sorry must be a valid putlocker (http://www.putlocker.com/file/{FILEID} ) or sockshare (http://www.sockshare.com/file/{FILEID} ) link.</string>
+</resources>

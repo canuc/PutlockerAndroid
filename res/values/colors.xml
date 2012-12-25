@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="node_timestamp_color">#BABCC1</color>
+    <color name="node_size_color">#6A7382</color>
+</resources>

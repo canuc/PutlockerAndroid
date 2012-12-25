@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+      <item android:id="@+id/menu_transfers"
+          android:icon="@drawable/downloading"
+          android:title="Transfers"
+          android:showAsAction="always"
+          />
+    <item android:id="@+id/menu_upload"
+          android:icon="@drawable/av_upload"
+          android:title="Upload" 
+          android:showAsAction="always"/>
+	<item
+	    android:id="@+id/menu_more"
+	    android:icon="@drawable/ic_action_overflow"
+	    android:showAsAction="always">
+		<menu>
+		    <item android:id="@+id/menu_share_item"
+	      		android:icon="@drawable/social_share"
+	      		android:title="Share"
+	      />   
+	      <item android:id="@+id/menu_download"
+	          android:icon="@drawable/menu_new"
+	          android:title="Download Link"/>
+	        <item
+	            android:id="@+id/menu_log_out"
+	            android:title="Log out" 
+	            />
+	         <item
+	            android:id="@+id/menu_sort"
+	            android:title="Sort Order..."
+	            />
+	        <item 
+	            android:id="@+id/menu_licenses"
+	            android:title="Licenses"/>
+	       
+	    </menu>
+    </item>
+</menu>
+  

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+ <style name="app_theme" parent="Theme.Sherlock.Light">
+        <item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
+         <item name="actionBarStyle">@style/action_bar_style</item>
+    <item name="android:actionBarStyle">@style/action_bar_style</item>
+</style>
+
+<style name="activity_style" parent="Theme.Sherlock.Light">     
+    	<item name="android:windowBackground">@drawable/app_background</item>
+        <item name="android:listViewStyle">@style/TransparentListView</item>
+        <item name="android:expandableListViewStyle">@style/TransparentExpandableListView</item>
+</style>
+<style name="action_bar_style" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+    <item name="background">@drawable/top_bar_background</item>
+    <item name="android:background">@drawable/top_bar_background</item>
+</style>
+
+ <style name="TransparentListView" parent="@android:style/Widget.ListView">
+  <item name="android:cacheColorHint">@android:color/transparent</item>
+ </style>
+
+ <style name="TransparentExpandableListView" parent="@android:style/Widget.ExpandableListView">
+  <item name="android:cacheColorHint">@android:color/transparent</item>
+ </style>
+
+ <style name="BoldText">
+    <item name="android:textColor">#ff000000</item>
+    <item name="android:textSize">16dip</item>
+    <item name="android:textStyle">bold</item>
+ </style>
+ 
+ <style name="ShadowBoldText" parent="@style/BoldText">
+       <item name="android:shadowColor">#ffffff</item>
+    	<item name="android:shadowDx">0</item>
+    	<item name="android:shadowDy">2</item>
+   	 <item name="android:shadowRadius">1</item>
+ </style>
+ 
+ <style name="BoldNotificationText">
+    <item name="android:textColor">#ffffffff</item>
+    <item name="android:textSize">16dip</item>
+    <item name="android:textStyle">bold</item>
+ </style>
+ 
+ <style name="ShadowBoldNotificationText" parent="@style/BoldNotificationText">
+     <item name="android:shadowColor">#000000</item>
+     <item name="android:shadowDx">0</item>
+     <item name="android:shadowDy">1</item>
+   	 <item name="android:shadowRadius">1</item>
+ </style>
+ 
+ 
+  <style name="LargeBoldText">
+    <item name="android:textSize">22dip</item>
+    <item name="android:textStyle">bold</item>
+ </style>
+ 
+ <style name="LargeShadowBoldText" parent="@style/LargeBoldText">
+       <item name="android:shadowColor">#000000</item>
+    	<item name="android:shadowDx">0</item>
+    	<item name="android:shadowDy">2</item>
+   	 <item name="android:shadowRadius">1</item>
+ </style>
+ 
+ <style name="SubheaderText">
+    <item name="android:textSize">14dip</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#5d5b5a</item>
+ </style>
+ 
+ <style name="ShadowSubheaderText" parent="@style/SubheaderText">
+       <item name="android:shadowColor">#FFFFFF</item>
+    	<item name="android:shadowDx">0</item>
+    	<item name="android:shadowDy">2</item>
+   	 <item name="android:shadowRadius">1</item>
+ </style>
+ 
+<style name="DialogTextStyle" parent="@style/textDialog">
+    <item name="android:textSize">16dip</item>
+    <item name="android:textStyle">bold</item>
+</style>
+
+<style name="subtext">
+    <item name="android:textSize">14dip</item>
+    <item name="android:textStyle">italic</item>
+</style>
+
+<style name="filesize_subtext" parent="@style/subtext">
+    <item name="android:textColor">@color/node_size_color</item>
+</style>
+
+<style name="update_subtext" parent="@style/subtext">
+    <item name="android:textColor">@color/node_timestamp_color</item>
+</style>
+</resources>
