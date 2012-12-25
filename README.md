@@ -3,12 +3,11 @@ PutlockerAndroid
 
 Putlocker Scraper for android
 
-This will scrape account data from putlocker.
+This will allow users to upload to putlocker.com, and this will scrape to find a user's files from putlocker.com. Also this application will allows users to download links from putlocker or sockshare. 
 
 The corresponding application is accessible at:
 
 https://play.google.com/store/apps/details?id=com.putlocker.upload
-
 
 Set Up
 ======
